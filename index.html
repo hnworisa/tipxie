@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="The navbar component can be used to show a list of navigation links positioned on the top side of your page based on multiple layouts, sizes, and dropdowns">
+
+  <title>Make a living from your passion - Tipxie</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="sticky top-0 z-50">
+    <nav class="bg-white/80 dark:bg-gray-800/80 backdrop-blur border-gray-200 px-4 lg:px-6 py-2.5">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <a href="https://flowbite.com" class="flex items-center">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Tipxie</span>
+        </a>
+        <div class="flex items-center lg:order-2">
+          <a href="#"
+            class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log
+            in</a>
+          <a href="#" class="btn-primary mr-2">Sign up</a>
+          <button data-collapse-toggle="mobile-menu" type="button"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu">
+          <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <!--<li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                aria-current="page">Home</a>
+            </li>-->
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Discover</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="relative bg-white dark:bg-gray-900">
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-12 pt-20 md:pt-32 md:pb-16 max-w-screen-xl text-center">
+      <h1
+        class="mx-auto max-w-4xl mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        Receive <span class="text-primary-600">support</span> from people who love your content</h1>
+      <p class="mx-auto max-w-2xl mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">The fast and
+        friendly way for creators to accept tips and donations.</p>
+
+      <div
+        class="mt-8 w-full h-[56px] md:w-[600px] md:h-[74px] pl-3 md:pl-6 pr-3 relative mx-auto border-2 border-grey rounded-full bg-white shadow-xs flex items-center">
+        <span class="text-md md:text-2xl font-medium text-dark">tipxie.com/</span>
+        <input placeholder="yourname" value="" class="w-full text-md md:w-11/12 md:text-2xl font-regular text-dark">
+        <button
+          class="btn-primary text-base font-medium all-transition flex-both-center relative text-sm px-4 h-[40px] md:px-6 md:h-[56px] md:text-xl flex-shrink-0">
+          <span class="inline-flex relative">
+            <h3>Claim my page<span></span></h3>
+          </span>
+        </button>
+      </div>
+      <div class="mt-4 text-4 text-gray-500 dark:text-gray-400 text-center">Give your audience a way to thank you.</div>
+      <!--<img src="https://kitwind.io/assets/kometa/half-browser.png" class="w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-md" alt="" />-->
+    </div>
+    <img src="/images/pizza.png" class="hidden xl:block absolute mt-5 top-0 bottom-auto left-[1%] xl:left-[8%] w-12 lg:w-24 -rotate-90">
+    <img src="/images/coins.png" class="hidden xl:block absolute mt-5 top-auto bottom-0 left-[1%] xl:left-[16%] w-12 lg:w-20 rotate-12">
+    <img src="/images/gift.png" class="hidden xl:block absolute mt-5 top-0 bottom-auto right-[1%] xl:right-[8%] w-12 lg:w-24 -rotate-12">
+    <img src="/images/coffee.png" class="hidden xl:block absolute mt-5 top-0 bottom-auto right-[1%] xl:right-[40%] w-12 lg:w-20 rotate-12">
+    <img src="/images/donut.png" class="hidden xl:block absolute mt-5 top-auto bottom-1/4 right-[1%] xl:right-[8%] w-12 lg:w-24">
+    <img id="floatingIconLeft" src="https://getfidia.com/_nuxt/img/leftDashboardLogo.7374499.svg" alt="Floating icons" class="hidden absolute top-0 bottom-0 md:left-[1%] xl:left-[8%] motion-safe:animate-[bounce-slow_6s_ease-in-out_infinite]">  
+    <img id="floatingIconRight" src="https://getfidia.com/_nuxt/img/rightDashboardLogo.3e1c47f.svg" alt="Floating icons" class="hidden absolute top-0 md:right-[1%] xl:right-[8%] motion-safe:animate-[bounce-slow_6s_ease-in-out_infinite]" >
+  </section>
+
+  <div class="mt-16">
+    <div class="bg-primary-100 text-gray-500 sm:text-lg dark:text-gray-400 pt-12 pb-16">
+      <div class="lg:w-[800px] mx-auto text-center lg:w-11/12 px-4 w-full pb-0">
+        <div>
+          <div
+            class="mt-3 text-4xl tracking-tight font-bold text-gray-900 dark:text-white w-full sm:px-1 sm:w-11/12 lg:w-4/5 lg:px-16 mx-auto">
+            Receive donations</div>
+          <p class="mt-6">Allow fans to show their support and appreciation for your content - receive donations and
+            messages of encouragement from fans of your craft!</p>
+        </div>
+        <div class="mt-12"><img src="https://cdn.buymeacoffee.com/assets/homepage/onetime-support-new.png" width="100%"
+            height="100%" alt="support">
+        </div>
+        <div class="mt-28 md:mt-16">
+          <div
+            class="mt-3 text-4xl tracking-tight font-bold text-gray-900 dark:text-white w-full sm:px-1 sm:w-11/12 lg:w-4/5 lg:px-16 mx-auto">
+            Personalised page</div>
+          <p class="mt-6">Get a one-stop page that has your updates, socials, and donation goals all together!</p>
+        </div>
+        <div class="mt-12"><img src="https://cdn.buymeacoffee.com/assets/homepage/onetime-support-new.png" width="100%"
+            height="100%" alt="support">
+        </div>
+        <div class="mt-28 md:mt-16">
+          <div>
+            <p
+              class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary-900 uppercase rounded-full bg-primary-200">
+              Coming Soon
+            </p>
+          </div>
+          <div
+            class="mt-3 text-4xl tracking-tight font-bold text-gray-900 dark:text-white w-full sm:px-1 sm:w-11/12 lg:w-4/5 lg:px-16 mx-auto">
+            Sell your products</div>
+          <p class="mt-6">Easily create product pages to sell your digital products and get paid faster without needing
+            a complicated e-commerce website.</p>
+        </div>
+        <div class="mt-12 flex md:flex-wrap">
+          <div>
+            <img src="https://cdn.buymeacoffee.com/assets/homepage/membership-new.png" width="100%" height="100%"
+              alt="membership">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="max-w-xl mb-10 sm:mx-auto">
+      <h2 class="text-4xl tracking-tight font-bold text-gray-900 dark:text-white sm:text-4xl sm:text-center">
+        Start accepting donations in three easy steps
+      </h2>
+    </div>
+    <div class="grid gap-12 row-gap-8 lg:grid-cols-3">
+      <div class="flex">
+        <div class="mr-4">
+          <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-primary-50">
+            <svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+              <path
+                d="M12.687 14.408a3.01 3.01 0 0 1-1.533.821l-3.566.713a3 3 0 0 1-3.53-3.53l.713-3.566a3.01 3.01 0 0 1 .821-1.533L10.905 2H2.167A2.169 2.169 0 0 0 0 4.167v11.666A2.169 2.169 0 0 0 2.167 18h11.666A2.169 2.169 0 0 0 16 15.833V11.1l-3.313 3.308Zm5.53-9.065.546-.546a2.518 2.518 0 0 0 0-3.56 2.576 2.576 0 0 0-3.559 0l-.547.547 3.56 3.56Z" />
+              <path
+                d="M13.243 3.2 7.359 9.081a.5.5 0 0 0-.136.256L6.51 12.9a.5.5 0 0 0 .59.59l3.566-.713a.5.5 0 0 0 .255-.136L16.8 6.757 13.243 3.2Z" />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h6 class="mb-2 font-semibold leading-5">Sign up</h6>
+          <p class="text-sm text-gray-900">
+            Sign up for free to get your own personalised link and page.
+          </p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="mr-4">
+          <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-primary-50">
+            <svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m5.953 7.467 6.094-2.612m.096 8.114L5.857 9.676m.305-1.192a2.581 2.581 0 1 1-5.162 0 2.581 2.581 0 0 1 5.162 0ZM17 3.84a2.581 2.581 0 1 1-5.162 0 2.581 2.581 0 0 1 5.162 0Zm0 10.322a2.581 2.581 0 1 1-5.162 0 2.581 2.581 0 0 1 5.162 0Z" />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h6 class="mb-2 font-semibold leading-5">Share</h6>
+          <p class="text-sm text-gray-900">
+            Embed the button widget on your site, or share your link anywhere on the web.
+          </p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="mr-4">
+          <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-primary-50">
+            <svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h6 class="mb-2 font-semibold leading-5">Receive support</h6>
+          <p class="text-sm text-gray-900">
+            Anyone can click your link to make a donation to show support.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-white">
+    <div class="bg-primary-800 rounded-3xl py-16 px-4 mx-auto w-11/12 max-w-5xl">
+      <div class="max-w-xl mx-auto text-center text-white">
+        <div class="text-2xl font-bold md:text-3xl">Ready to monetize your passion?</div>
+        <div class="mt-6 md:text-base">Create a free account in less than a minute!</div>
+        <div class="mt-6 mx-auto">
+          <a target="" href="https://selar.co/register"
+            class="px-6 py-4 inline-block font-medium rounded-full bg-white text-primary-700 text-sm">Get started for
+            free</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="px-6 py-16 pb-12 md:px-0 bg-white">
+    <div class="grid md:grid-cols-4 grid-cols-1 gap-4 max-w-7xl pb-12 mx-auto">
+      <div class="px-4 lg:px-6">
+        <a href="/"><svg aria-hidden="true" viewBox="0 0 109 40" class="h-10 w-auto">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0 20c0 11.046 8.954 20 20 20s20-8.954 20-20S31.046 0 20 0 0 8.954 0 20Zm20 16c-7.264 0-13.321-5.163-14.704-12.02C4.97 22.358 6.343 21 8 21h24c1.657 0 3.031 1.357 2.704 2.98C33.32 30.838 27.264 36 20 36Z"
+              fill="#2563EB"></path>
+            <path d="M55.528 26.57V15.842H52V13.97h9.108v1.872h-3.636V26.57h-1.944Z" fill="#0F172A"></path>
+            <path
+              d="M83.084 26.57v-12.6h5.346c.744 0 1.416.18 2.016.54a3.773 3.773 0 0 1 1.44 1.44c.36.612.54 1.302.54 2.07 0 .78-.18 1.482-.54 2.106a4 4 0 0 1-1.44 1.494c-.6.36-1.272.54-2.016.54h-2.646v4.41h-2.7Zm2.664-6.84h2.376c.288 0 .546-.072.774-.216.228-.156.408-.36.54-.612a1.71 1.71 0 0 0 .216-.864c0-.324-.072-.606-.216-.846a1.394 1.394 0 0 0-.54-.576 1.419 1.419 0 0 0-.774-.216h-2.376v3.33ZM106.227 26.57V13.25h2.556v13.32h-2.556Z"
+              fill="#2563EB"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M95.906 26.102c.636.432 1.35.648 2.142.648.444 0 .864-.066 1.26-.198a4.25 4.25 0 0 0 1.062-.558 3.78 3.78 0 0 0 .702-.668v1.244h2.574v-9.522h-2.538v1.248a3.562 3.562 0 0 0-.648-.672 3.13 3.13 0 0 0-1.026-.558 3.615 3.615 0 0 0-1.278-.216c-.828 0-1.566.216-2.214.648-.648.42-1.164 1.002-1.548 1.746-.372.732-.558 1.578-.558 2.538 0 .96.186 1.812.558 2.556.372.744.876 1.332 1.512 1.764Zm4.104-1.908c-.36.228-.78.342-1.26.342-.468 0-.882-.114-1.242-.342a2.387 2.387 0 0 1-.828-.954c-.204-.42-.306-.906-.306-1.458 0-.54.102-1.014.306-1.422.204-.408.48-.726.828-.954.36-.24.774-.36 1.242-.36.48 0 .9.12 1.26.36.36.228.636.546.828.954.204.408.306.882.306 1.422 0 .552-.102 1.038-.306 1.458a2.218 2.218 0 0 1-.828.954Z"
+              fill="#2563EB"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="m76.322 23.197 2.595 3.373h2.268l-3.662-4.787 3.338-4.663h-2.196l-2.162 3.334-2.554-3.334h-2.34l3.652 4.71-3.634 4.74h2.196l2.5-3.373ZM62.738 26.102a3.78 3.78 0 0 0 2.142.648c.456 0 .888-.072 1.296-.216.42-.144.798-.336 1.134-.576a3.418 3.418 0 0 0 .864-.835v1.447h1.872v-9.45h-1.872v1.45a3.118 3.118 0 0 0-.72-.82 3.2 3.2 0 0 0-1.062-.612 4.033 4.033 0 0 0-1.35-.216c-.828 0-1.578.21-2.25.63-.66.42-1.188 1.002-1.584 1.746-.384.732-.576 1.572-.576 2.52 0 .936.192 1.776.576 2.52.384.744.894 1.332 1.53 1.764Zm4.122-1.476c-.432.276-.93.414-1.494.414a2.682 2.682 0 0 1-1.476-.414 2.987 2.987 0 0 1-1.008-1.134c-.24-.492-.36-1.05-.36-1.674 0-.612.12-1.158.36-1.638.252-.48.588-.858 1.008-1.134a2.682 2.682 0 0 1 1.476-.414c.564 0 1.062.138 1.494.414.432.276.768.654 1.008 1.134.252.48.378 1.026.378 1.638 0 .624-.126 1.182-.378 1.674-.24.48-.576.858-1.008 1.134Z"
+              fill="#0F172A"></path>
+          </svg></a>
+        <p class="text-gray-600 dark:text-gray-300"></p>
+      </div>
+      <div class="md:pl-16">
+        <h4 class="font-bold mb-4">Explore</h4>
+        <ul class="space-y-2">
+          <li><a href="/" class="text-slate-700 hover:bg-slate-100 hover:text-slate-900">Home</a></li>
+          <li><a href="/discover">Discover</a></li>
+          <li><a href="/nuture">Nurture</a></li>
+          <li><a href="/showcase">Showcase</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <h4 class="font-bold mb-4">Links</h4>
+        <ul class="space-y-2">
+          <li><a href="/terms">Terms &amp; Conditions</a></li>
+          <li><a href="/privacy-policy">Privacy &amp; Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4">Connect</h4>
+        <ul class="text-2xl flex items-center space-x-6 social-media">
+          <li><a href="https://instagram.com/tomtomsweet_ng" class="flex items-center" target="_blank" rel="noreferrer"
+              aria-label="Follow us on Instagram"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                </path>
+              </svg></a></li>
+          <li><a href="https://twitter.com/tomtomsweet_ng" class="flex items-center" target="_blank" rel="noreferrer"
+              aria-label="Follow us on Twitter"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path>
+              </svg></a></li>
+          <li><a href="https://www.youtube.com/channel/UCUq9E7Z4uiPu6dNdsNzp5lA" class="flex items-center"
+              target="_blank" rel="noreferrer" aria-label="View Our YouTube Channel"><svg stroke="currentColor"
+                fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                </path>
+              </svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="pt-8 mt-8 border-t dark:border-neutral-800 border-neutral-200 text-center text-xs opacity-75 text-neutral-500">
+      <p class="text-xs uppercase">© Copyright <!-- -->2023<!-- --> - BreatheForIt With TomTom | All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
